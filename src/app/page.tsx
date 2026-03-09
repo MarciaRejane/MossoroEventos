@@ -1,9 +1,9 @@
-import Image from "next/image";
+
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <h1>Hello word</h1>
-    </div>
+    <main>
+      <h1 className="text-black">Hello word</h1>
+    </main>
   );
 }
