@@ -4,8 +4,8 @@ import { NavMobile } from "./nav-mobile";
 
 export default function Header() {
   return (
-    <header className=" md:w-full pt-8 px-8">
-      <div className="bg-blue-main flex items-center justify-between py-4 px-10 text-white rounded-lg w-full ">
+    <header className="fixed top-0 left-0 z-50 w-full pt-8 px-8 ">
+      <div className=" bg-blue-main flex items-center justify-between py-4 px-10 text-white rounded-lg w-full pointer-events-auto shadow-lg">
         <div>
           <Image
             src="/assets/Logo.png"

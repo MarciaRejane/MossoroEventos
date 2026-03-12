@@ -1,6 +1,6 @@
 "use client"
 import { NavigationMenu, NavigationMenuItem, NavigationMenuLink, NavigationMenuList } from "../../ui/navigation-menu"
-
+import Link from "next/link";
 import { NAV_ITEMS } from "@/src/config/navigation";
 
 export function NavDesktop() {
@@ -14,9 +14,11 @@ export function NavDesktop() {
 
             return (
               <NavigationMenuItem key={item.label}>
-                <NavigationMenuLink key={item.href} className="text-md">
-                  <Icon sx={{ width: 20 }} className="text-white" />
-                  {item.label}
+                <NavigationMenuLink asChild className="text-md">
+                  <Link href={item.href}>
+                    <Icon sx={{ width: 20 }} className="text-white" />
+                    {item.label}
+                  </Link>
                 </NavigationMenuLink>
               </NavigationMenuItem>
             )
