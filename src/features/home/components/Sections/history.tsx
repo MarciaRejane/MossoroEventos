@@ -12,7 +12,7 @@ export function SectionHistory() {
             <p>Mossoró é das maiores cidades do Rio Grande do Norte e destaca-se no cenário nacional por sua rica história e cultura vibrante. A cidade é mundialmente conhecida pelo espetáculo "Chuva de Bala no País de Mossoró", que relembra a resistência da população ao ataque do bando de Lampião.</p>
             <p>Durante o mês de junho, Mossoró se transforma no palco do maior São João do mundo, com uma programação que inclui shows nacionais, apresentações culturais, gastronomia típica e muito mais.</p>
           </div>
-          <Link href={"/historia"}>
+          <Link href={"/history"}>
             <Button variant={"secondary"} className="w-fit p-5 bg-brown-light hover:bg-brown-medium font-semibold text-md text-white">
               Conheça Nossa História
             </Button>

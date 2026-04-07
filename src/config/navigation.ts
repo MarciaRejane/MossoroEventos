@@ -20,7 +20,7 @@ export const NAV_ITEMS = [
     icon: CalendarTodayOutlinedIcon,
   },
   {
-    href: "/",
+    href: "/history",
     label: "História",
     icon: HistoryOutlinedIcon,
   },
