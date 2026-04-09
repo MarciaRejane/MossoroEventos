@@ -10,7 +10,7 @@ export const NAV_ITEMS = [
     icon: HomeOutlinedIcon,
   },
   {
-    href: "/",
+    href: "/Events",
     label: "Eventos",
     icon: RoomOutlinedIcon,
   },
