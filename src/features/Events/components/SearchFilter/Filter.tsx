@@ -1,18 +1,31 @@
+import { EventCategory } from "@/src/@types/events";
 import { NativeSelect, NativeSelectOptGroup, NativeSelectOption } from "@/src/components/ui/native-select"
 
-export function FilterEvent() {
+type FilterProps = {
+  category: EventCategory | null;
+  onChange: (value: EventCategory | null) => void;
+}
+
+export function FilterEvent({ category, onChange }: FilterProps) {
+  function handleChange(value: string) {
+    if (value === "") {
+      onChange(null);
+    } else {
+      onChange(value as EventCategory);
+    }
+  }
+
   return (
     <div >
-      <NativeSelect className="text-gray-5 border-gray-4 border-2">
+      <NativeSelect value={category ?? ""} onChange={(e) => handleChange(e.target.value)} className="text-gray-5 border-gray-4 border-2">
         <NativeSelectOptGroup>
           <NativeSelectOption value="">Selecione Evento</NativeSelectOption>
-          <NativeSelectOption value="todos">Todos</NativeSelectOption>
-          <NativeSelectOption value="show">Show</NativeSelectOption>
-          <NativeSelectOption value="teatro">Teatro</NativeSelectOption>
-          <NativeSelectOption value="gastronomia">Gastronomia</NativeSelectOption>
-          <NativeSelectOption value="cultural">Cultural</NativeSelectOption>
-          <NativeSelectOption value="infantil">Infantil</NativeSelectOption>
-          <NativeSelectOption value="esporte">Esporte</NativeSelectOption>
+          <NativeSelectOption value="Show">Show</NativeSelectOption>
+          <NativeSelectOption value="Teatro">Teatro</NativeSelectOption>
+          <NativeSelectOption value="Gastronomia">Gastronomia</NativeSelectOption>
+          <NativeSelectOption value="Cultura">Cultura</NativeSelectOption>
+          <NativeSelectOption value="Infantil">Infantil</NativeSelectOption>
+          <NativeSelectOption value="Esporte">Esporte</NativeSelectOption>
         </NativeSelectOptGroup>
       </NativeSelect>
     </div>
