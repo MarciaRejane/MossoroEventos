@@ -1,6 +1,6 @@
 import type { Event } from "@/src/@types/events";
 
-export const event: Event[] = [
+export const events: Event[] = [
   {
     id: "1",
     imageUrl: "/assets/chuva-de-bala.png",
