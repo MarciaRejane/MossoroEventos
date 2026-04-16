@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import { events } from "@/src/features/Events/data/mocks/events";
+import { events } from "@/src/data/mocks/events";
 import type { EventCategory } from "@/src/@types/events";
 import { normalize } from "@/src/lib/utils";
 

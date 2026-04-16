@@ -1,7 +1,7 @@
 "use client"
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/src/components/ui/carrossel";
 import { EventCard } from "@/src/components/custom/event/EventCard";
-import { events } from "@/src/features/home/data/mocks/eventsItem";
+import { events } from "@/src/data/mocks/events";
 import { Button } from "@/src/components/ui/button";
 import CircleOutlinedIcon from '@mui/icons-material/CircleOutlined';
 import CircleRoundedIcon from '@mui/icons-material/CircleRounded';
