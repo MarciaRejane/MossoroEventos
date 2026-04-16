@@ -15,7 +15,7 @@ export const NAV_ITEMS = [
     icon: RoomOutlinedIcon,
   },
   {
-    href: "/",
+    href: "/Calendar",
     label: "Calendário",
     icon: CalendarTodayOutlinedIcon,
   },
