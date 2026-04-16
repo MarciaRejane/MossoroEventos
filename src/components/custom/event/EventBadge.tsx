@@ -8,12 +8,12 @@ type EventBadgeProps = {
 };
 
 const categoryColors: Record<EventCategory, string> = {
-  Show: "bg-yellow-500 text-white",
-  Teatro: "bg-purple-500 text-white",
-  Gastronomia: "bg-orange-500 text-white",
-  Cultura: "bg-blue-main text-white",
+  Show: "bg-purple-600 text-white",
+  Teatro: "bg-red-300 text-white",
+  Gastronomia: "bg-orange text-white",
+  Cultura: "bg-blue-500 text-white",
   Infantil: "bg-green-500 text-white",
-  Esporte: "bg-red-500 text-white",
+  Esporte: "bg-yellow-400 text-white",
 };
 
 const defaultColor = "bg-brown-light text-white";
