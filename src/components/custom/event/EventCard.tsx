@@ -1,18 +1,19 @@
 import { Card, CardContent, CardTitle } from "@/src/components/ui/card";
-import type { Event } from "@/src/@types/events";
+import type { EventItem } from "@/src/@types/events";
 import Image from "next/image";
 import { EventBadge } from "./EventBadge";
 import { EventInformation } from "./EventInformation";
 
 type eventItemProps = {
-  event: Event;
+  event: EventItem;
   badgeVariant?: "default" | "category";
+  showImage?: boolean;
 };
 
-export function EventCard({ event, badgeVariant = "default" }: eventItemProps) {
+export function EventCard({ event, showImage, badgeVariant = "default" }: eventItemProps) {
   return (
     <Card className="flex flex-col border hover:shadow-gray-4 border-gray-2 pt-0.5 bg-white rounded-lg overflow-hidden mb-4">
-      {event.imageUrl && (
+      {showImage && event.imageUrl && (
         <div className="h-50 w-full relative">
           <Image
             fill
@@ -22,19 +23,18 @@ export function EventCard({ event, badgeVariant = "default" }: eventItemProps) {
             alt={event.title} />
         </div>
       )}
-      {event.id && (
-        <CardContent className="flex flex-col gap-1 pt-5">
-          <EventBadge category={event.category} variant={badgeVariant} />
-          <CardTitle className="text-blue-main font-bold text-base">{event.title}</CardTitle>
-          <div className="text-gray-5 font-medium text-md">
-            <EventInformation
-              date={event.date}
-              time={event.time}
-              location={event.location}
-            />
-          </div>
-        </CardContent>
-      )}
+      <CardContent className="flex flex-col gap-1 pt-5">
+        <EventBadge category={event.category} variant={badgeVariant} />
+        <CardTitle className="text-blue-main font-bold text-base">{event.title}</CardTitle>
+        <div className="text-gray-5 font-medium text-md">
+          <EventInformation
+            date={event.date}
+            time={event.time}
+            location={event.location?.name}
+          />
+        </div>
+      </CardContent>
+
     </Card>
   )
 }

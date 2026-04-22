@@ -3,9 +3,14 @@ import { ScrollArea, ScrollBar } from "@/src/components/ui/scroll-area";
 import { SearchFilterContainer } from "../SearchFilter/SearchFilterContainer";
 import { EventList } from "../EventList";
 import { useEvents } from "../../hook/useEvents";
+import { EventItem } from "@/src/@types/events";
 
-export function EventSction() {
-  const { filteredEvents, category, setCategory, search, setSearch } = useEvents();
+type EventItemProps = {
+  events: EventItem[];
+}
+
+export function EventSction({ events }: EventItemProps) {
+  const { filteredEvents, category, setCategory, search, setSearch } = useEvents(events);
   return (
     <section className="min-h-screen">
       <ScrollArea className="h-full">

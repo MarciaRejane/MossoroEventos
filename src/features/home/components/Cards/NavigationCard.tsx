@@ -1,5 +1,4 @@
 //Card da tela Home sem foto
-"use client"
 import Link from "next/link";
 import { ElementType } from "react"
 import { Card, CardContent, CardTitle } from "@/src/components/ui/card";

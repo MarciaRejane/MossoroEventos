@@ -1,14 +1,14 @@
 "use client";
 
+import { EventItem } from "@/src/@types/events";
 import { useState } from "react";
-import { events } from "@/src/data/mocks/events";
 
-export function useCalendar() {
+export function useCalendar(events: EventItem[]) {
   const [currentMonth, setCurrentMonth] = useState(new Date()); // Guarda a data atual
 
   //filtra só os eventos do mês atual
   const eventMonths = events.filter((event) => {
-    const dataEvento = new Date(event.date); //transforma string em date
+    const dataEvento = event.date; //transforma string em date
     //pega mes e ano do evento
     const mesEvento = dataEvento.getMonth();
     const anoEvento = dataEvento.getFullYear();
@@ -25,8 +25,7 @@ export function useCalendar() {
     ...new Set(
       eventMonths.map((dia) => {
         //Pega só o dia do vento
-        const dataAtual = new Date(dia.date);
-        return dataAtual.getDate();
+        return dia.date.getDate();
       }),
     ),
   ];

@@ -1,10 +1,9 @@
 "use client";
 import { useState } from "react";
-import { events } from "@/src/data/mocks/events";
-import type { EventCategory } from "@/src/@types/events";
+import type { EventItem, EventCategory } from "@/src/@types/events";
 import { normalize } from "@/src/lib/utils";
 
-export function useEvents() {
+export function useEvents(events: EventItem[]) {
   const [search, setSearch] = useState<string>("");
   const [category, setCategory] = useState<EventCategory | null>(null);
 
@@ -13,7 +12,7 @@ export function useEvents() {
     //O texto digitado existe no titulo OU na localização
     const matchSearch =
       normalize(event.title).includes(normalizedSearch) ||
-      normalize(event.location ?? "").includes(normalizedSearch);
+      normalize(event.location?.name ?? "").includes(normalizedSearch);
 
     //(category === null)Mostra todos, sem filtro | (event.category === category) so mostra os iguais a categoria clicada
     const matchCategory = category === null || event.category === category;

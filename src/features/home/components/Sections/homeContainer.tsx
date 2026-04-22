@@ -3,14 +3,19 @@ import { SectionHero } from "./hero";
 import { SectionHistory } from "./history";
 import { SectionMomentsCards } from "./momentsCard";
 import { SectionNavigationCard } from "./navigationCards";
+import { EventItem } from "@/src/@types/events";
 
-export function HomeContainer() {
+type EventItemProps = {
+  events: EventItem[]
+}
+
+export function HomeContainer({ events }: EventItemProps) {
   return (
     <div>
       <SectionHero />
       <SectionNavigationCard />
       <SectionHistory />
-      <SectionEventsCarrossel />
+      <SectionEventsCarrossel events={events} />
       <SectionMomentsCards />
     </div>
   )

@@ -1,11 +1,16 @@
+import { EventItem } from "@/src/@types/events";
 import { EventSction } from "./EventSection";
 import { HeroSection } from "./HeroSection";
 
-export function EventContainer() {
+
+type EventItemProps = {
+  events: EventItem[];
+}
+export function EventContainer({ events }: EventItemProps) {
   return (
     <div>
       <HeroSection />
-      <EventSction />
+      <EventSction events={events} />
     </div>
   )
 }

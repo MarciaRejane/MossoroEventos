@@ -1,14 +1,14 @@
 "use client"
 
-import { Event } from "@/src/@types/events";
+import { EventItem } from "@/src/@types/events";
 import { EventCard } from "@/src/components/custom/event/EventCard"
 import { ScrollArea } from "@/src/components/ui/scroll-area";
 import CalendarTodayOutlinedIcon from "@mui/icons-material/CalendarTodayOutlined";
 
-type EventListProps = {
-  events: Event[];
+type EventItemProps = {
+  events: EventItem[];
 }
-export function EventListCard({ events }: EventListProps) {
+export function EventListCard({ events }: EventItemProps) {
   return (
     <div className="bg-white shadow-md shadow-gray-4  p-8 rounded h-full ">
       <div className="flex flex-row gap-2 text-blue-main">

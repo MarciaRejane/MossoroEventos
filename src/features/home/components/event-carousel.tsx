@@ -1,13 +1,17 @@
 "use client"
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/src/components/ui/carrossel";
 import { EventCard } from "@/src/components/custom/event/EventCard";
-import { events } from "@/src/data/mocks/events";
 import { Button } from "@/src/components/ui/button";
 import CircleOutlinedIcon from '@mui/icons-material/CircleOutlined';
 import CircleRoundedIcon from '@mui/icons-material/CircleRounded';
 import { useCarousel } from "@/src/features/home/hook/useCarousel";
+import { EventItem } from "@/src/@types/events";
 
-export function EventCarousel() {
+type EventItemProps = {
+  events: EventItem[]
+}
+
+export function EventCarousel({ events }: EventItemProps) {
   const { count, current, scrollTo, setApi } = useCarousel();
   return (
     <div >
@@ -16,7 +20,7 @@ export function EventCarousel() {
           {events.map((item) => (
             <CarouselItem key={item.id} className="md:basis-1/3">
               <div>
-                <EventCard event={item} />
+                <EventCard event={item} showImage />
               </div>
             </CarouselItem>
           ))}
