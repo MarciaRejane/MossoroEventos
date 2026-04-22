@@ -6,12 +6,16 @@ export type EventCategory =
   | "Infantil"
   | "Esporte";
 
-export interface Event {
+export interface EventItem {
   id: string;
   title: string;
   date: Date;
   time: string;
-  location?: string;
+  location?: {
+    name: string;
+    lat: number;
+    lng: number;
+  };
   category: EventCategory;
   imageUrl?: string;
 }
