@@ -13,8 +13,9 @@ export default function Footer() {
             src="/assets/Logo.png"
             width={60}
             height={60}
+            sizes="100vw"
             alt="Logo de mossoró eventos"
-            className="md:w-16 md:h-16 w-16 h-16"
+            className="w-16 h-auto"
           />
           <div className="flex flex-col text-white mb-2">
             <h1 className="text-lg">Mossoró meu pais</h1>
