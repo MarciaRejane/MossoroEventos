@@ -8,6 +8,7 @@ export function SectionHero() {
       <Image
         src="/assets/mossoro-home.png"
         fill
+        sizes="(max-width: 768px) 100vw, 100vw"
         priority
         className="object-cover"
         alt="Imagem de mossoró"
@@ -19,13 +20,13 @@ export function SectionHero() {
           <p>O maior São João do mundo te espera!</p>
           <p>Tradição, cultura e alegria em cada evento.</p>
         </div>
-        <div className=" flex gap-4 items-center flex-col md:flex-row ">
+        <div className=" flex gap-4 items-center flex-col md:flex-row">
           <Link href="/Events">
-            <Button className="bg-brown-light hover:bg-brown-medium text-white font-bold text-md md:text-bs" size={"lg"} variant={"secondary"}>Ver eventos</Button>
+            <Button className="bg-brown-light hover:bg-brown-medium text-white font-bold text-md md:text-bs cursor-pointer" size={"lg"} variant={"secondary"}>Ver eventos</Button>
           </Link>
 
           <Link href="/Calendar">
-            <Button className="text-blue-dark bg-white hover:bg-gray-1 font-bold text-md md:text-bs" size={"lg"} variant={"secondary"}>Calendário Completo</Button>
+            <Button className="text-blue-dark bg-white hover:bg-gray-1 font-bold text-md md:text-bs cursor-pointer" size={"lg"} variant={"secondary"}>Calendário Completo</Button>
           </Link>
         </div>
       </div>

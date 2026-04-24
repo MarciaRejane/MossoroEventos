@@ -8,11 +8,11 @@ interface MomentsCardImageProps {
 
 export function CardMomentsImage({ moment }: MomentsCardImageProps) {
   return (
-    <Card className="relative h-64 w-full border-none ">
-      <CardContent>
-        <div className="group overflow-hidden cursor-pointer">
+    <Card className="relative w-full border-none py-0">
+      <CardContent className="px-0">
+        <div className="group overflow-hidden cursor-pointer rounded-lg relative w-full h-64">
           {moment.imageUrl && (
-            <Image fill priority className="object-cover transition-transform duration-300 group-hover:scale-105 border-none rounded-xl" src={moment.imageUrl} alt={moment.title} />
+            <Image sizes="(max-width: 768px) 100vw, 100vw" fill className=" object-cover transition-transform duration-300 group-hover:scale-105 border-none rounded-xl" src={moment.imageUrl} alt={moment.title} />
           )}
           <div className="absolute inset-0 bg-black/20 hover:bg-black/40 border-none rounded-xl hover:scale-105"></div>
 

@@ -13,19 +13,21 @@ export function SectionHistory() {
             <p>Durante o mês de junho, Mossoró se transforma no palco do maior São João do mundo, com uma programação que inclui shows nacionais, apresentações culturais, gastronomia típica e muito mais.</p>
           </div>
           <Link href={"/history"}>
-            <Button variant={"secondary"} className="w-fit p-5 bg-brown-light hover:bg-brown-medium font-semibold text-md text-white">
+            <Button variant={"secondary"} className="w-fit p-5 bg-brown-light hover:bg-brown-medium font-semibold text-md text-white cursor-pointer">
               Conheça Nossa História
             </Button>
           </Link>
         </div>
 
-        <Image
-          src="/assets/conheca-historia.png"
-          width={600}
-          height={400}
-          alt="Foto da capela de Santa Luzia"
-          className="w-full h-auto  rounded object-cover"
-        />
+        <div className="relative w-full h-64 md:w-[150rem]  md:h-[400px]">
+          <Image
+            src="/assets/conheca-historia.png"
+            fill
+            sizes="(max-width: 768px) 100vw, 100vw"
+            alt="Foto da capela de Santa Luzia"
+            className=" rounded object-cover"
+          />
+        </div>
       </div>
     </section>
   )
