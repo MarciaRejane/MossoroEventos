@@ -1,3 +1,5 @@
+"use client"
+
 import { EventCategory } from "@/src/@types/events";
 import { NativeSelect, NativeSelectOptGroup, NativeSelectOption } from "@/src/components/ui/native-select"
 
@@ -17,7 +19,7 @@ export function FilterEvent({ category, onChange }: FilterProps) {
 
   return (
     <div >
-      <NativeSelect value={category ?? ""} onChange={(e) => handleChange(e.target.value)} className="text-gray-5 border-gray-4 border-2">
+      <NativeSelect value={category ?? ""} onChange={(e) => handleChange(e.target.value)} className="text-gray-5 border-gray-4 border-2 cursor-pointer">
         <NativeSelectOptGroup>
           <NativeSelectOption value="">Selecione Evento</NativeSelectOption>
           <NativeSelectOption value="Show">Show</NativeSelectOption>
@@ -26,6 +28,10 @@ export function FilterEvent({ category, onChange }: FilterProps) {
           <NativeSelectOption value="Cultura">Cultura</NativeSelectOption>
           <NativeSelectOption value="Infantil">Infantil</NativeSelectOption>
           <NativeSelectOption value="Esporte">Esporte</NativeSelectOption>
+          <NativeSelectOption value="Feira">Feira</NativeSelectOption>
+          <NativeSelectOption value="Religioso">Religioso</NativeSelectOption>
+          <NativeSelectOption value="Educacional">Educacional</NativeSelectOption>
+          <NativeSelectOption value="Festival">Festival</NativeSelectOption>
         </NativeSelectOptGroup>
       </NativeSelect>
     </div>
