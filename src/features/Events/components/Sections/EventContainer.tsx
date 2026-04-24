@@ -1,5 +1,5 @@
 import { EventItem } from "@/src/@types/events";
-import { EventSction } from "./EventSection";
+import { EventSection } from "./EventSection";
 import { HeroSection } from "./HeroSection";
 
 
@@ -10,7 +10,7 @@ export function EventContainer({ events }: EventItemProps) {
   return (
     <div>
       <HeroSection />
-      <EventSction events={events} />
+      <EventSection events={events} />
     </div>
   )
 }
