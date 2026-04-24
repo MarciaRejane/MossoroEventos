@@ -14,6 +14,10 @@ const categoryColors: Record<EventCategory, string> = {
   Cultura: "bg-blue-500 text-white",
   Infantil: "bg-green-500 text-white",
   Esporte: "bg-yellow-400 text-white",
+  Educacional: "bg-brown-soft text-white",
+  Feira: "bg-green-700 text-white",
+  Festival: "bg-fuchsia-300 text-white",
+  Religioso: "bg-indigo-400 text-white",
 };
 
 const defaultColor = "bg-brown-light text-white";
@@ -22,7 +26,7 @@ export function EventBadge({ category, variant = "default", className = "", }: E
   const color = variant === "category" ? categoryColors[category] : defaultColor;
 
   return (
-    <Badge className={`px-4 py-1 ${color} ${className}`}>
+    <Badge className={` px-4 py-1 ${color} ${className}`}>
       {category}
     </Badge>
   )
