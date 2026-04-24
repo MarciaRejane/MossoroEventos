@@ -6,6 +6,7 @@ import { normalize } from "@/src/lib/utils";
 export function useEvents(events: EventItem[]) {
   const [search, setSearch] = useState<string>("");
   const [category, setCategory] = useState<EventCategory | null>(null);
+  const [selectedEvent, setSelectedEvent] = useState<EventItem | null>(null);
 
   const filteredEvents = events.filter((event) => {
     const normalizedSearch = normalize(search.trim());
@@ -25,5 +26,7 @@ export function useEvents(events: EventItem[]) {
     setSearch,
     category,
     setCategory,
+    selectedEvent,
+    setSelectedEvent,
   };
 }
