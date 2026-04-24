@@ -4,6 +4,10 @@ export type EventCategory =
   | "Gastronomia"
   | "Cultura"
   | "Infantil"
+  | "Feira"
+  | "Religioso"
+  | "Educacional"
+  | "Festival"
   | "Esporte";
 
 export interface EventItem {
@@ -11,11 +15,12 @@ export interface EventItem {
   title: string;
   date: Date;
   time: string;
-  location?: {
+  location: {
     name: string;
     lat: number;
     lng: number;
   };
+  description?: string;
   category: EventCategory;
   imageUrl?: string;
 }
