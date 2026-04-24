@@ -25,8 +25,8 @@ export function EventCarousel({ events }: EventItemProps) {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious className="w-10 h-10 bg-gray-1" />
-        <CarouselNext className="w-10 h-10 bg-gray-1" />
+        <CarouselPrevious className="w-10 h-10 bg-gray-1 cursor-pointer" />
+        <CarouselNext className="w-10 h-10 bg-gray-1 cursor-pointer" />
         <div className="flex items-center justify-center">
           {Array.from({ length: count }).map((_, index) => (
             <Button key={index} onClick={() => scrollTo(index)} variant={"outline"} className="text-white border-none">{index === current ? <CircleRoundedIcon sx={{ width: 20 }} /> : <CircleOutlinedIcon sx={{ width: 20 }} />}</Button>
