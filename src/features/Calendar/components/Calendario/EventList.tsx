@@ -18,7 +18,7 @@ export function EventListCard({ events }: EventItemProps) {
       <ScrollArea className="border-none border-gray-4 ">
         <div className=" w-full md:max-w-2xs">
           {events.length === 0 ? (
-            <p>Nenhum event encontrado para este mês</p>
+            <p>Nenhum evento encontrado para este mês</p>
           ) : (
             events.map((item) => (
               <EventCard event={item} key={item.id} badgeVariant="category" />
