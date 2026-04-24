@@ -9,7 +9,7 @@ export function NavMobile() {
     <div className="md:hidden">
       <Sheet>
         <SheetTrigger asChild>
-          <button className="text-white">
+          <button className="text-white cursor-pointer">
             <MenuOutlinedIcon />
           </button>
         </SheetTrigger>
@@ -36,7 +36,7 @@ export function NavMobile() {
                 <Link
                   key={item.label}
                   href={item.href}
-                  className="flex gap-2 py-2 text-bs"
+                  className="flex gap-2 py-2 text-bs hover:bg-blue-dark hover:rounded-md hover:px-1"
                 >
                   <Icon sx={{ width: 20 }} />
                   {item.label}

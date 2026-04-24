@@ -17,7 +17,7 @@ export default function Header() {
         <NavDesktop />
         <NavMobile />
 
-        <button className="bg-blue-dark rounded-full py-2 px-5 text-bs">
+        <button className="bg-blue-dark rounded-full py-2 px-5 text-bs cursor-pointer">
           Login
         </button>
       </div>
