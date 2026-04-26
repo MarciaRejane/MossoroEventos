@@ -10,12 +10,12 @@ export const NAV_ITEMS = [
     icon: HomeOutlinedIcon,
   },
   {
-    href: "/Events",
+    href: "/dashboard/Events",
     label: "Eventos",
     icon: RoomOutlinedIcon,
   },
   {
-    href: "/Calendar",
+    href: "/dashboard/Calendar",
     label: "Calendário",
     icon: CalendarTodayOutlinedIcon,
   },

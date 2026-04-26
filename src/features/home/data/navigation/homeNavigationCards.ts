@@ -4,13 +4,13 @@ import AudiotrackRoundedIcon from "@mui/icons-material/AudiotrackRounded";
 import RestaurantRoundedIcon from "@mui/icons-material/RestaurantRounded";
 export const HOME_NAVIGATION_CARDS = [
   {
-    href: "/Calendar",
+    href: "/dashboard/Calendar",
     title: "Calendário",
     icon: CalendarTodayOutlinedIcon,
     variant: "blue",
   },
   {
-    href: "/Events",
+    href: "/dashboard/Events",
     title: "Mapa de Eventos",
     icon: RoomOutlinedIcon,
     variant: "brown",

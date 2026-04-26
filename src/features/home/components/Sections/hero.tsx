@@ -21,11 +21,11 @@ export function SectionHero() {
           <p>Tradição, cultura e alegria em cada evento.</p>
         </div>
         <div className=" flex gap-4 items-center flex-col md:flex-row">
-          <Link href="/Events">
+          <Link href="/dashboard/Events">
             <Button className="bg-brown-light hover:bg-brown-medium text-white font-bold text-md md:text-bs cursor-pointer" size={"lg"} variant={"secondary"}>Ver eventos</Button>
           </Link>
 
-          <Link href="/Calendar">
+          <Link href="/dashboard/Calendar">
             <Button className="text-blue-dark bg-white hover:bg-gray-1 font-bold text-md md:text-bs cursor-pointer" size={"lg"} variant={"secondary"}>Calendário Completo</Button>
           </Link>
         </div>
