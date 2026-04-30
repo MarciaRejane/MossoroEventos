@@ -1,5 +1,5 @@
-export function dashBoard() {
-  return (
-    <div><h1>Dashboard</h1></div>
-  )
+import { redirect } from "next/navigation";
+
+export default function dashBoard() {
+  redirect("/dashboard/Events")
 }

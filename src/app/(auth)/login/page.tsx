@@ -1,5 +1,9 @@
+import { LoginUI } from "@/src/features/auth/components/LoginUI";
+
 export default function login() {
   return (
-    <div><h1>login</h1></div>
+    <main>
+      <LoginUI />
+    </main>
   )
 }
