@@ -16,7 +16,7 @@ export function NavDesktop() {
               <NavigationMenuItem key={item.label}>
                 <NavigationMenuLink asChild className="text-md">
                   <Link href={item.href}>
-                    <Icon sx={{ width: 20 }} className="text-white" />
+                    <Icon sx={{ width: 20 }} className="text-blue-6" />
                     {item.label}
                   </Link>
                 </NavigationMenuLink>

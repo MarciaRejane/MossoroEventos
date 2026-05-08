@@ -9,12 +9,12 @@ export function NavMobile() {
     <div className="md:hidden">
       <Sheet>
         <SheetTrigger asChild>
-          <button className="text-white cursor-pointer">
+          <button className="text-blue-5 cursor-pointer">
             <MenuOutlinedIcon />
           </button>
         </SheetTrigger>
 
-        <SheetContent side="top" className="bg-blue-main border-none">
+        <SheetContent side="top" className="bg-white border-none">
           <SheetHeader>
             <Image
               src="/assets/Logo.png"
@@ -28,7 +28,7 @@ export function NavMobile() {
             </SheetTitle>
           </SheetHeader>
 
-          <nav className="px-2 text-white">
+          <nav className="px-2 text-blue-6">
             {NAV_ITEMS.map((item) => {
               const Icon = item.icon
 
@@ -36,7 +36,7 @@ export function NavMobile() {
                 <Link
                   key={item.label}
                   href={item.href}
-                  className="flex gap-2 py-2 text-bs hover:bg-blue-dark hover:rounded-md hover:px-1"
+                  className="flex gap-2 py-2 text-bs hover:bg-blue-2 hover:rounded-md hover:px-1"
                 >
                   <Icon sx={{ width: 20 }} />
                   {item.label}

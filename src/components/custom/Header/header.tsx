@@ -20,13 +20,13 @@ export default function Header() {
   // }
   return (
     <header className="fixed top-0 left-0 z-50 w-full pt-8 px-8 ">
-      <div className=" bg-blue-main flex items-center justify-between py-4 px-10 text-white rounded-lg w-full pointer-events-auto shadow-lg">
+      <div className=" bg-white  flex items-center justify-between py-4 px-10 text-blue-6 rounded-lg w-full pointer-events-auto shadow-lg shadow-gray-4">
         <div>
           <Link href="/">
             <Image
               src="/assets/Logo.png"
-              width={60}
-              height={60}
+              width={65}
+              height={65}
               alt="Logo Mossoró cidade junina" />
           </Link>
         </div>
