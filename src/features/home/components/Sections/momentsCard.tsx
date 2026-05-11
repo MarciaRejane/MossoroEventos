@@ -6,8 +6,8 @@ export function SectionMomentsCards() {
     <section className="bg-white px-8 py-15">
       <div className="space-y-10">
         <div className="flex flex-col items-center">
-          <h1 className="text-blue-dark font-bold text-3xl">Momentos Inesquecíveis</h1>
-          <p className="text-lg">Veja a magia que acontece em Mossoró</p>
+          <h2 className="text-blue-5 font-bold text-3xl">Momentos Inesquecíveis</h2>
+          <p className="text-lg text-brown-3">Veja a magia que acontece em Mossoró</p>
         </div>
         <div className="flex flex-col gap-5 md:flex-row justify-center items-center">
           {MomentsMossoro.map((item) => (
