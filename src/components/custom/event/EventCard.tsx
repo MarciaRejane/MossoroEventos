@@ -30,7 +30,7 @@ export function EventCard({ event, showImage, badgeVariant = "default", variant 
         {!isMap && (
           <EventBadge category={event.category} variant={badgeVariant} />
         )}
-        <CardTitle className="text-blue-main font-bold text-base">{event.title}</CardTitle>
+        <CardTitle className="text-blue-5 font-bold text-base">{event.title}</CardTitle>
         <div className="text-gray-5 font-medium text-md">
           <EventInformation
             date={event.date}

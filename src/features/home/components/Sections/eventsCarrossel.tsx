@@ -6,7 +6,7 @@ type EventItemProps = {
 }
 export function SectionEventsCarrossel({ events }: EventItemProps) {
   return (
-    <section className="bg-blue-main flex flex-col items-center px-8 py-15" >
+    <section className="bg-blue-5 flex flex-col items-center px-8 py-15" >
       <div className="space-y-10">
         <div className="text-white font-semibold flex flex-col items-center">
           <h1 className="text-3xl">Próximos Eventos</h1>
