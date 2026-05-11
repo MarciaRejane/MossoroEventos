@@ -3,7 +3,7 @@ import Link from "next/link";
 import { ElementType } from "react"
 import { Card, CardContent, CardTitle } from "@/src/components/ui/card";
 
-type Variant = "blue" | "brown" | "purple" | "brownLight";
+type Variant = "blue" | "brown" | "blueLight" | "brownLight";
 
 interface NavigationCardProps {
   title: string;
@@ -13,10 +13,10 @@ interface NavigationCardProps {
 }
 export function NavigationCard({ title, href, icon: Icon, variant }: NavigationCardProps) {
   const variantStyles = {
-    blue: "bg-blue-main  text-white",
-    brown: "bg-brown-medium text-white",
-    purple: "bg-purple-500 text-white",
-    brownLight: "bg-brown-light text-white",
+    blue: "bg-white text-blue-5 hover:shadow-md hover:shadow-blue-5",
+    brown: "bg-white text-blue-5 hover:shadow-md hover:shadow-blue-5",
+    blueLight: "bg-white text-blue-5 hover:shadow-md hover:shadow-blue-5",
+    brownLight: "bg-white text-blue-5 hover:shadow-md hover:shadow-blue-5",
   };
 
   return (

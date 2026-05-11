@@ -19,7 +19,7 @@ export const HOME_NAVIGATION_CARDS = [
     href: "/",
     title: "Shows",
     icon: AudiotrackRoundedIcon,
-    variant: "purple",
+    variant: "blueLight",
   },
   {
     href: "/",
