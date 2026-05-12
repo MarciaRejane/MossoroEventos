@@ -10,6 +10,11 @@ export const NAV_ITEMS = [
     icon: HomeOutlinedIcon,
   },
   {
+    href: "/history",
+    label: "História",
+    icon: HistoryOutlinedIcon,
+  },
+  {
     href: "/dashboard/Events",
     label: "Eventos",
     icon: RoomOutlinedIcon,
@@ -18,10 +23,5 @@ export const NAV_ITEMS = [
     href: "/dashboard/Calendar",
     label: "Calendário",
     icon: CalendarTodayOutlinedIcon,
-  },
-  {
-    href: "/history",
-    label: "História",
-    icon: HistoryOutlinedIcon,
   },
 ];
