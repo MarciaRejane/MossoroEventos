@@ -7,25 +7,44 @@ interface Props {
   card: History;
   index: number;
 }
-
 export function TimelineItem({ card, index }: Props) {
   const isReverse = index % 2 !== 0;
-  const colorBadge = {
-    green: "bg-green-400 text-white",
-    purple: "bg-purple-500 text-white",
-    blue: "bg-cyan-500 text-white",
-    orange: "bg-orange-500 text-white",
-    pink: "bg-pink-500 text-white",
-    blueDark: "bg-blue-dark text-white",
+
+  const variantStyles = {
+    green: {
+      badge: "bg-green-2",
+      text: "text-green-2",
+    },
+
+    blueWater: {
+      badge: "bg-blue-3",
+      text: "text-blue-3",
+    },
+    brown: {
+      badge: "bg-brown-3",
+      text: "text-brown-3",
+    },
+    darkGreen: {
+      badge: "bg-green-5",
+      text: "text-green-5",
+    },
+    blueSky: {
+      badge: "bg-blue-2",
+      text: "text-blue-2",
+    },
+    blueDark: {
+      badge: "bg-blue-5",
+      text: "text-blue-5",
+    },
   };
 
   return (
     <div className="relative w-full">
       <Badge
         className={`
-          hidden md:flex absolute md:left-1/2 md:-translate-x-1/2 z-10
+          hidden md:flex absolute text-white md:left-1/2 md:-translate-x-1/2 z-10
           px-4 py-2 font-semibold
-          ${colorBadge[card.variant]}
+          ${variantStyles[card.variant].badge}
         `}
       >
         {card.year}
@@ -34,8 +53,8 @@ export function TimelineItem({ card, index }: Props) {
       <div className="md:hidden flex mb-2 -translate-x-6">
         <Badge
           className={`
-          px-4 py-2 font-semibold
-          ${colorBadge[card.variant]}
+          px-4 py-2 font-semibold text-white
+          ${variantStyles[card.variant].badge}
           `}
         >
           {card.year}
@@ -43,8 +62,8 @@ export function TimelineItem({ card, index }: Props) {
       </div>
 
       <div className={`flex flex-col gap-4
-        md:flex-row md:items-center md:gap-20 translate-x-2 md:justify-center w-full
-        ${isReverse ? "md:flex-row-reverse md:-translate-x-2 md:gap-20" : ""}
+        md:flex-row md:items-center md:gap-32 translate-x-2 md:justify-center w-full
+        ${isReverse ? "md:flex-row-reverse md:-translate-x-2 md:gap-32" : ""}
         `}>
 
         <Card className="overflow-hidden p-0 mb-4 border-none">
@@ -58,7 +77,7 @@ export function TimelineItem({ card, index }: Props) {
         </Card>
 
         <Card className="p-6 text-center border-none shadow-md shadow-gray-2 hover:shadow-gray-4  md:max-w-[24rem]">
-          <CardTitle className="text-blue-main text-xl font-bold mb-2">
+          <CardTitle className={`${variantStyles[card.variant].text}  text-xl font-bold mb-2`}>
             {card.title}
           </CardTitle>
           <CardDescription className="text-gray-5 font-medium text-md">

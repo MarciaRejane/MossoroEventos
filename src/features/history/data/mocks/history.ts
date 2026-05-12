@@ -18,7 +18,7 @@ export const TIMELINE_ITEMS: History[] = [
     imageUrl: "/assets/motim-historia.png",
     description:
       "Em 1875, as mulheres de Mossoró protagonizaram um episódio histórico contra o recrutamento forçado. O chamado 'Motim das Mulheres' demonstrou a força e coragem da população mossoroense, especialmente das mulheres que impediram que seus maridos e filhos fossem levados à força.",
-    variant: "purple",
+    variant: "blueWater",
   },
 
   {
@@ -28,7 +28,7 @@ export const TIMELINE_ITEMS: History[] = [
     imageUrl: "/assets/historia-escravatura.png",
     description:
       "Mossoró tornou-se a primeira cidade brasileira a abolir a escravatura em 30 de setembro de 1883, quase cinco anos antes da Lei Áurea. Este ato corajoso consolidou a cidade como símbolo de liberdade e resistência.",
-    variant: "blue",
+    variant: "brown",
   },
 
   {
@@ -38,7 +38,7 @@ export const TIMELINE_ITEMS: History[] = [
     imageUrl: "/assets/historia-resistencia.png",
     description:
       "A cidade entrou para história nacional ao resistir ao ataque do bando de Lampião em 13 de junho de 1927. A população se organizou e, liderada por autoridades locais, conseguiu repelir o bando de cangaceiros. Este episódio inspirou o espetáculo 'Chuva de Bala no País de Mossoró'.",
-    variant: "orange",
+    variant: "darkGreen",
   },
 
   {
@@ -48,7 +48,7 @@ export const TIMELINE_ITEMS: History[] = [
     imageUrl: "/assets/historia-femininoVoto.png",
     description:
       "Em 1928, Mossoró realizou uma eleição pioneira ao permitir que as mulheres votassem, sendo um marco na luta pelos direitos femininos no Brasil. Celina Guimarães Viana foi a primeira mulher a votar na América Latina.",
-    variant: "pink",
+    variant: "blueSky",
   },
 
   {

@@ -5,5 +5,11 @@ export interface History {
   title: string;
   description: string;
   imageUrl: string;
-  variant: "green" | "purple" | "blue" | "orange" | "pink" | "blueDark";
+  variant:
+    | "green"
+    | "blueWater"
+    | "brown"
+    | "darkGreen"
+    | "blueSky"
+    | "blueDark";
 }
