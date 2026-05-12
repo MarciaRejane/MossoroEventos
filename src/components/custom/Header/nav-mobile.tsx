@@ -1,17 +1,20 @@
+"use-clint"
+
 import { NAV_ITEMS } from "@/src/config/navigation";
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "../../ui/sheet";
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined"
 import Link from "next/link";
 import Image from "next/image";
+import { Button } from "../../ui/button";
 
 export function NavMobile() {
   return (
     <div className="md:hidden">
       <Sheet>
         <SheetTrigger asChild>
-          <button className="text-blue-5 cursor-pointer">
+          <Button className="text-blue-5 cursor-pointer">
             <MenuOutlinedIcon />
-          </button>
+          </Button>
         </SheetTrigger>
 
         <SheetContent side="top" className="bg-white border-none">

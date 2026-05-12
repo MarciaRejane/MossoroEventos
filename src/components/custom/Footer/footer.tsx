@@ -1,3 +1,4 @@
+
 import Image from "next/image";
 import { FOOTER_DATA } from "@/src/config/footer";
 import Link from "next/link";
@@ -16,11 +17,10 @@ export default function Footer() {
             <div className="flex items-center gap-3">
               <Image
                 src="/assets/Logo.png"
-                width={60}
-                height={60}
-                sizes="100vw"
+                width={65}
+                height={65}
                 alt="Logo de mossoró eventos"
-                className="w-16 h-auto"
+                className=""
               />
               <div className="text-blue-6">
                 <h1 className="text-xl font-extrabold tracking-tighter">Mossoró <br /> Meu País</h1>
@@ -75,8 +75,9 @@ export default function Footer() {
             src="/assets/footer-igreja-branco.png"
             width={300}
             height={150}
+            sizes="100vw"
             alt="Ilustração da igreja de Mossoró"
-            className="opacity-60 w-auto h-32 lg:h-70 object-contain"
+            className="opacity-60 h-32 lg:h-70 w-auto object-contain"
           />
         </div>
 

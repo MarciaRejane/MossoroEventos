@@ -25,6 +25,7 @@ export function HeroCarouselPlugin() {
             <Image
               src={image}
               alt={`Palco principal do Mossoró Cidade Junina`}
+              sizes="(max-width: 768px) 100vw, 50vw"
               fill
               priority={index === 0}
               className="object-cover object-center"

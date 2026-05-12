@@ -19,8 +19,8 @@ export default function Header() {
   //   window.location.href = "/login"
   // }
   return (
-    <header className="fixed top-0 left-0 z-50 w-full pt-8 px-8 ">
-      <div className=" bg-white  flex items-center justify-between py-4 px-10 text-blue-6 rounded-lg w-full pointer-events-auto shadow-lg shadow-gray-4">
+    <header className="fixed top-0 left-0 z-50 w-full py-4 px-8 ">
+      <div className=" bg-white/90 backdrop-blur-md flex items-center justify-between py-2 px-6 text-blue-6 rounded-lg w-full pointer-events-auto shadow-lg shadow-gray-4">
         <div>
           <Link href="/">
             <Image
