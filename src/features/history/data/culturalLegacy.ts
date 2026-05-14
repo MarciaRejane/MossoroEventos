@@ -1,6 +1,4 @@
-import TheaterComedyRoundedIcon from "@mui/icons-material/TheaterComedyRounded";
-
-export const CULTURAL_LEGARY_CARDS = [
+export const CULTURAL_LEGACY_CARDS = [
   {
     title: "Pioneirismo",
     imageUrl: "/assets/pioneiro-history.png",
