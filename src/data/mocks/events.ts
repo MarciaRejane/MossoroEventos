@@ -3,7 +3,7 @@ import type { EventItem } from "@/src/@types/events";
 export const events: EventItem[] = [
   {
     id: "1",
-    imageUrl: "/assets/feira-livro.png",
+    imageUrl: "/assets/events/feira-livro.png",
     category: "Cultura",
     description:
       "Evento literário com venda de livros, lançamentos, palestras e atividades culturais, reunindo autores, estudantes e a comunidade.",
@@ -19,7 +19,7 @@ export const events: EventItem[] = [
 
   {
     id: "2",
-    imageUrl: "/assets/chuva-de-bala.png",
+    imageUrl: "/assets/events/chuva-de-bala.png",
     category: "Teatro",
     title: "Chuva de Bala no País de Mossoró",
     description:
@@ -35,7 +35,7 @@ export const events: EventItem[] = [
 
   {
     id: "3",
-    imageUrl: "/assets/santa-luzia.png",
+    imageUrl: "/assets/events/santa-luzia.png",
     category: "Religioso",
     title: "Festa de Santa Luzia",
     description:
@@ -51,7 +51,7 @@ export const events: EventItem[] = [
 
   {
     id: "4",
-    imageUrl: "/assets/festa-liberdade.png",
+    imageUrl: "/assets/events/festa-liberdade.png",
     category: "Cultura",
     title: "Festa da Liberdade",
     description:
@@ -67,7 +67,7 @@ export const events: EventItem[] = [
 
   {
     id: "5",
-    imageUrl: "/assets/festa-do-bode.png",
+    imageUrl: "/assets/events/festa-do-bode.png",
     category: "Feira",
     title: "Festa do Bode",
     description:
@@ -83,7 +83,7 @@ export const events: EventItem[] = [
 
   {
     id: "6",
-    imageUrl: "/assets/liberdade.png",
+    imageUrl: "/assets/events/liberdade.png",
     category: "Teatro",
     title: "Auto da Liberdade",
     description:
@@ -99,7 +99,7 @@ export const events: EventItem[] = [
 
   {
     id: "7",
-    imageUrl: "/assets/cidade-junina.png",
+    imageUrl: "/assets/events/cidade-junina.png",
     category: "Festival",
     title: "Mossoró Cidade Junina",
     description:
