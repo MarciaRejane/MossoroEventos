@@ -24,4 +24,9 @@ export const NAV_ITEMS = [
     label: "Calendário",
     icon: CalendarTodayOutlinedIcon,
   },
+  {
+    href: "/dashboard/ExploreMossoro",
+    label: "Explorar Mossoro",
+    icon: RoomOutlinedIcon,
+  },
 ];
