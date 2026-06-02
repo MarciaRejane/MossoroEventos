@@ -35,6 +35,7 @@ export interface Place {
   tags: string[];
   price?: string;
   imageUrl: string;
+  images: string[];
   address: string;
   phone: string;
   schedule: string;
