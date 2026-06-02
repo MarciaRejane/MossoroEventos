@@ -1,4 +1,4 @@
-export const FILTER_OPTIOS = {
+export const FILTER_OPTIONS = {
   Hospedagem: ["Todos", "Hotel", "Pousada"],
 
   Gastronomia: [
@@ -9,7 +9,7 @@ export const FILTER_OPTIOS = {
     "Japonesa",
   ],
 
-  Turismo: ["Todos", "Patrimônio Histórico", "Centro Cultural", "religioso"],
+  Turismo: ["Todos", "Patrimônio Histórico", "Centro Cultural", "eligioso"],
 
   Saúde: ["Todos", "Hospital", "Clinica"],
 

@@ -2,11 +2,11 @@ import { Place } from "../../types";
 import { HeroSection } from "./heroSection";
 import { TourismSection } from "./tourismSection";
 
-type placesProps = {
+type PlacesProps = {
   places: Place[];
 };
 
-export function ExploreContainerSection({ places }: placesProps) {
+export function ExploreContainerSection({ places }: PlacesProps) {
   return (
     <div>
       <HeroSection />
