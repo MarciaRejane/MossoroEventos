@@ -1,3 +1,5 @@
+"use client"
+
 import { Card, CardContent, CardDescription, CardFooter, CardTitle } from "@/src/components/ui/card";
 import { Place } from "../../types";
 import Image from "next/image";
@@ -5,12 +7,13 @@ import NearMeOutlinedIcon from '@mui/icons-material/NearMeOutlined';
 import { ExplorerInformation } from "./ExplorerInformation";
 import { Button } from "@/src/components/ui/button";
 import { ExplorerBadge } from "./explorerBadge";
+import Link from "next/link";
 
-type placesProps = {
+type PlacesProps = {
   card: Place;
 };
 
-export function ExplorerCard({ card }: placesProps) {
+export function ExplorerCard({ card }: PlacesProps) {
   return (
     <Card className="group max-w-2xl w-full shadow-lg shadow-gray-4 border-none pt-0 overflow-hidden rounded-2xl transition-all duration-300">
       <div className="flex justify-end px-5 pt-5 h-60 w-full relative overflow-hidden">
@@ -60,8 +63,12 @@ export function ExplorerCard({ card }: placesProps) {
           </div>
         </div>
         <div className="flex flex-wrap justify-center w-full gap-3">
-          <Button className="bg-blue-5 text-white w-full cursor-pointer">Ver Detalhes</Button>
-          <Button className="text-white bg-brown-4 w-full cursor-pointer"><NearMeOutlinedIcon /> Rota</Button>
+          <Link href={`/dashboard/ExploreMossoro/${card.slug}`} className="w-full">
+            <Button className="bg-blue-5 text-white w-full cursor-pointer">Ver Detalhes</Button>
+          </Link>
+          <Link href={"/"} className="w-full">
+            <Button className="text-white bg-brown-4 w-full cursor-pointer"><NearMeOutlinedIcon /> Rota</Button>
+          </Link>
         </div>
       </CardFooter>
     </Card>
