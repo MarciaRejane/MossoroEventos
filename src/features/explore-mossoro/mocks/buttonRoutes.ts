@@ -6,6 +6,7 @@ export const BUTTON_ROUTES = [
   {
     title: "Google Maps",
     description: "Navegação GPS",
+    type: "googleMap",
     icon: MapOutlinedIcon,
     iconColor: "text-blue-5 bg-blue-2",
   },
@@ -13,6 +14,7 @@ export const BUTTON_ROUTES = [
   {
     title: "Waze",
     description: "Navegação GPS",
+    type: "waze",
     icon: NearMeOutlinedIcon,
     iconColor: "text-blue-5 bg-cyan-200",
   },
@@ -20,14 +22,15 @@ export const BUTTON_ROUTES = [
   {
     title: "Uber",
     description: "Solicitar Corrida",
+    type: "uber",
     icon: AirportShuttleRoundedIcon,
     iconColor: "text-white bg-black",
   },
-
-  {
-    title: "99",
-    description: "Navegação GPS",
-    icon: AirportShuttleRoundedIcon,
-    iconColor: "text-yellow-4 bg-yellow-1",
-  },
-];
+  // {
+  //   title: "99",
+  //   description: "Navegação GPS",
+  //   type: "99",
+  //   icon: AirportShuttleRoundedIcon,
+  //   iconColor: "text-yellow-4 bg-yellow-1",
+  // },
+] as const;
