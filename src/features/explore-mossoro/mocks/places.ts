@@ -15,14 +15,16 @@ export const PLACES: Place[] = [
     ],
     category: "Hospedagem",
     type: "Hotel",
-    address: "Av. Presidente Dutra, Mossoró - RN",
     phone: "(84) 3323-0300",
     price: "280-380",
     rating: 4.4,
     tags: ["wi-fi", "piscina"],
     schedule: "24 horas",
-    latitude: -5.1894,
-    longitude: -37.3441,
+    location: {
+      address: "Av. Presidente Dutra, Mossoró - RN",
+      lat: -5.20067,
+      lng: -37.3401,
+    },
   },
 
   {
@@ -37,14 +39,16 @@ export const PLACES: Place[] = [
     ],
     category: "Hospedagem",
     type: "Hotel",
-    address: "BR-304, Mossoró - RN",
     phone: "(84) 3323-5000",
     price: "250-350",
     rating: 4.5,
     tags: ["wi-fi", "Piscina", "Estacionamento"],
     schedule: "24 horas",
-    latitude: -5.1831,
-    longitude: -37.3481,
+    location: {
+      address: "Av. Lauro Monte, Mossoró - RN",
+      lat: -5.16791,
+      lng: -37.35192,
+    },
   },
 
   // TURISMO
@@ -60,13 +64,15 @@ export const PLACES: Place[] = [
     ],
     category: "Turismo",
     type: "Religioso",
-    address: "Centro, Mossoró - RN",
     phone: "(84) 3321-3157",
     rating: 4.8,
     tags: ["Arquitetura Histórica", "Missas Diárias"],
     schedule: "06h às 18h",
-    latitude: -5.187,
-    longitude: -37.3447,
+    location: {
+      address: "Centro, Mossoró - RN",
+      lat: -5.19206,
+      lng: -37.34136,
+    },
   },
 
   // SAÚDE
@@ -82,13 +88,15 @@ export const PLACES: Place[] = [
     ],
     category: "Saúde",
     type: "Hospital",
-    address: "Centro, Mossoró - RN",
     phone: "(84) 3318-9000",
     rating: 4.4,
     tags: ["Atendimento", "laboratório"],
     schedule: "24 horas",
-    latitude: -5.1842,
-    longitude: -37.3472,
+    location: {
+      address: "R. Pedro Velho, Mossoró - RN",
+      lat: -5.18685,
+      lng: -37.34635,
+    },
   },
 
   // COMPRAS
@@ -104,13 +112,15 @@ export const PLACES: Place[] = [
     ],
     category: "Compras",
     type: "Shopping",
-    address: "Nova Betânia, Mossoró - RN",
     phone: "(84) 3312-4400",
     rating: 4.4,
     tags: ["Lojas", "Cinemas", "Praça de Alimentação"],
     schedule: "10h às 22h",
-    latitude: -5.182,
-    longitude: -37.35,
+    location: {
+      address: "Av. João da Escóssia, Mossoró - RN",
+      lat: -5.17123,
+      lng: -37.37616,
+    },
   },
 
   // LAZER
@@ -126,12 +136,14 @@ export const PLACES: Place[] = [
     ],
     category: "Lazer",
     type: "Parque",
-    address: "Centro, Mossoró - RN",
     phone: "(84) 3315-4800",
     rating: 4.4,
     tags: ["Lanchonete", "Brinquedos", "Personagens De Desenhos"],
     schedule: "05h às 22h",
-    latitude: -5.185,
-    longitude: -37.3455,
+    location: {
+      address: "Bom jardim, Mossoró - RN",
+      lat: -5.187,
+      lng: -37.34274,
+    },
   },
 ];

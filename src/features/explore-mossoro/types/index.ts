@@ -36,9 +36,11 @@ export interface Place {
   price?: string;
   imageUrl: string;
   images: string[];
-  address: string;
   phone: string;
   schedule: string;
-  latitude: number;
-  longitude: number;
+  location: {
+    address: string;
+    lat: number;
+    lng: number;
+  };
 }
