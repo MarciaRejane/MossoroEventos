@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Place } from "../../../types";
-import { ExplorerBadge } from "../../cards/explorerBadge";
+import { ExplorerBadge } from "../../explorerBadge";
 
 type PlacesProps = {
   place: Place;
@@ -13,6 +13,7 @@ export function HeroSection({ place }: PlacesProps) {
         <Image
           src={place.imageUrl}
           fill
+          sizes="(max-width: 768px) 100vw, 50vw"
           alt={place.title}
           className="object-cover rounded-xl shadow-2xl shadow-gray-3"
         />
@@ -21,11 +22,12 @@ export function HeroSection({ place }: PlacesProps) {
 
       <div className="flex flex-col gap-5 md:w-[30%]">
         {place.images.map((image, index) => (
-          <div key={index} className="relative  md:h-[240px]">
+          <div key={index} className="relative w-full md:h-[240px]">
             <Image
               src={image}
               alt={place.title}
               fill
+              sizes="(max-width: 768px) 100vw, 50vw"
               className="object-cover rounded-xl shadow-2xl shadow-gray-3"
             />
           </div>
