@@ -13,7 +13,6 @@ export function CulturalEventSection() {
 
       <div className="flex flex-col md:flex-row items-center gap-8 ">
         {CULTURAL_EVENTS.map((image, index) => (
-
           <Image
             key={index}
             src={image.imageUrl}

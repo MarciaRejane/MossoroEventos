@@ -72,7 +72,7 @@ export function TimelineItem({ card, index }: Props) {
             alt={card.title}
             width={600}
             height={370}
-            className="object-cover w-full md:w-[370px]"
+            className="object-cover w-full md:w-[370px] h-auto"
           />
         </Card>
 
