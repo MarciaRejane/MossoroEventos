@@ -4,7 +4,7 @@ import Link from "next/link"
 
 export function SectionHistory() {
   return (
-    <section className="px-8 py-5 mb-12">
+    <section className="lg:px-8 px-2 lg:py-5 mb-12">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row gap-10 items-center">
         <div className="space-y-6">
           <h2 className=" text-3xl md:text-4xl font-bold text-blue-5 mb-2">Conheça Mossoró</h2>

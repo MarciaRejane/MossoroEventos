@@ -6,7 +6,7 @@ export function CulturalLegacySection() {
   return (
     <section className="flex flex-col items-center gap-8 py-16 px-8">
       <h2 className="text-blue-5 font-bold text-xl md:text-4xl">Legado Cultural</h2>
-      <div className="flex flex-col md:flex-row gap-5">
+      <div className="flex flex-col lg:flex-row gap-5">
         {CULTURAL_LEGACY_CARDS.map((item, index) => (
           <Card key={index} className="flex flex-col items-center border-none transition-shadow duration-300 shadow-lg hover:shadow-gray-4 w-full md:[320px]">
             <Image

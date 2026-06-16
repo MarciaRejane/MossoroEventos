@@ -9,7 +9,7 @@ import { Button } from "../../ui/button";
 
 export function NavMobile() {
   return (
-    <div className="md:hidden">
+    <div className="lg:hidden">
       <Sheet>
         <SheetTrigger asChild>
           <Button className="text-blue-5 cursor-pointer">

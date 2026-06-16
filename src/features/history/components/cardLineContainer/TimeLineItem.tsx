@@ -42,7 +42,7 @@ export function TimelineItem({ card, index }: Props) {
     <div className="relative w-full">
       <Badge
         className={`
-          hidden md:flex absolute text-white md:left-1/2 md:-translate-x-1/2 z-10
+          hidden lg:flex absolute text-white lg:left-1/2 md:-translate-x-1/2 z-10
           px-4 py-2 font-semibold
           ${variantStyles[card.variant].badge}
         `}
@@ -50,7 +50,7 @@ export function TimelineItem({ card, index }: Props) {
         {card.year}
       </Badge>
 
-      <div className="md:hidden flex mb-2 -translate-x-6">
+      <div className="lg:hidden flex mb-2 -translate-x-6">
         <Badge
           className={`
           px-4 py-2 font-semibold text-white
@@ -62,8 +62,8 @@ export function TimelineItem({ card, index }: Props) {
       </div>
 
       <div className={`flex flex-col gap-4
-        md:flex-row md:items-center md:gap-32 translate-x-2 md:justify-center w-full
-        ${isReverse ? "md:flex-row-reverse md:-translate-x-2 md:gap-32" : ""}
+        lg:flex-row lg:items-center lg:gap-32 translate-x-2 lg:justify-center w-full
+        ${isReverse ? "lg:flex-row-reverse lg:-translate-x-2 lg:gap-32" : ""}
         `}>
 
         <Card className="overflow-hidden p-0 mb-4 border-none">
@@ -72,11 +72,11 @@ export function TimelineItem({ card, index }: Props) {
             alt={card.title}
             width={600}
             height={370}
-            className="object-cover w-full md:w-[370px] h-auto"
+            className="object-cover w-full lg:w-[370px] h-auto"
           />
         </Card>
 
-        <Card className="p-6 text-center border-none shadow-md shadow-gray-2 hover:shadow-gray-4  md:max-w-[24rem]">
+        <Card className="p-6 text-center border-none shadow-md shadow-gray-2 hover:shadow-gray-4  lg:max-w-[24rem]">
           <CardTitle className={`${variantStyles[card.variant].text}  text-xl font-bold mb-2`}>
             {card.title}
           </CardTitle>

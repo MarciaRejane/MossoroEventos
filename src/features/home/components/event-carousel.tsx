@@ -28,10 +28,10 @@ export function EventCarousel({ events }: EventItemProps) {
             stopOnInteraction: false,
           }),
         ]}
-        className="w-full max-w-3xs md:max-w-6xl">
+        className="w-full max-w-3xs md:max-w-[40rem] lg:max-w-4xl">
         <CarouselContent>
           {events.map((item) => (
-            <CarouselItem key={item.id} className="md:basis-1/3 px-5">
+            <CarouselItem key={item.id} className="lg:basis-1/3 md:basis-1/2 md:px-2 lg:px-5">
               <div>
                 <EventCard event={item} showImage />
               </div>

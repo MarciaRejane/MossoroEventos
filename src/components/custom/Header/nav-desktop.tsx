@@ -6,7 +6,7 @@ import { NAV_ITEMS } from "@/src/config/navigation";
 export function NavDesktop() {
 
   return (
-    <div className="hidden md:flex">
+    <div className="hidden lg:flex">
       <NavigationMenu>
         <NavigationMenuList>
           {NAV_ITEMS.map((item) => {

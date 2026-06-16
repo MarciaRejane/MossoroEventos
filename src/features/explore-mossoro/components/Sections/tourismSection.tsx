@@ -18,7 +18,7 @@ export function TourismSection({ places }: PlacesProps) {
       <div className="bg-linear-to-r from-blue-6 to-purple-950 -mt-6 p-8 shadow-md rounded-xl">
         <SearchFilterContainer search={search} setSearch={setSearch} categorys={selectedCategory} setCategory={handleCategoryChange} typeCategory={selectedType} setTypeCategory={setSelectedType} />
       </div>
-      <div className="px-20 py-8 grid grid-cols-2  md:grid-cols-3 xl:grid-cols-4 gap-6">
+      <div className="lg:px-20 py-8 grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
         {filteredExplorer.map((place) => (
           <ExplorerCard key={place.id} card={place} />
         ))}

@@ -3,7 +3,7 @@ import { CULTURAL_EVENTS } from "../../data/mocks/culturalEvent";
 
 export function CulturalEventSection() {
   return (
-    <section className="bg-brown-3 py-20 px-8 md:px-35 flex  flex-col items-center gap-2 justify-center">
+    <section className="bg-brown-3 py-20 px-8 lg:px-35 flex  flex-col items-center gap-2 justify-center">
       <h2 className="mb-8 font-semibold text-4xl md:text-5xl text-brown-1">Chuva de Bala no País de Mossoró</h2>
       <div className="mb-2 text-lg text-white font-medium space-y-3 mx-auto max-w-4xl text-justify">
         <p>O espetáculo "Chuva de Bala no País de Mossoró" é considerado o maior espetáculo a céu aberto do Brasil e reconta o episódio histórico da resistência da cidade ao ataque do bando de Lampião em 13 de junho de 1927.</p>
