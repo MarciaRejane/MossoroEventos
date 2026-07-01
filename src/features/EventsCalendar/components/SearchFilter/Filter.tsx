@@ -19,7 +19,7 @@ export function FilterEvent({ category, onChange }: FilterProps) {
 
   return (
     <div >
-      <NativeSelect value={category ?? ""} onChange={(e) => handleChange(e.target.value)} className="text-gray-5 border-gray-4 border-2 cursor-pointer">
+      <NativeSelect value={category ?? ""} onChange={(e) => handleChange(e.target.value)} className="text-gray-5 bg-white border-gray-4 border-2 cursor-pointer">
         <NativeSelectOptGroup>
           <NativeSelectOption value="">Selecione Evento</NativeSelectOption>
           <NativeSelectOption value="Show">Show</NativeSelectOption>
