@@ -8,19 +8,19 @@ type EventBadgeProps = {
 };
 
 const categoryColors: Record<EventCategory, string> = {
-  Show: "bg-purple-600 text-white",
-  Teatro: "bg-red-300 text-white",
-  Gastronomia: "bg-orange text-white",
-  Cultura: "bg-blue-500 text-white",
-  Infantil: "bg-green-500 text-white",
-  Esporte: "bg-yellow-400 text-white",
-  Educacional: "bg-brown-soft text-white",
-  Feira: "bg-green-700 text-white",
-  Festival: "bg-fuchsia-300 text-white",
-  Religioso: "bg-indigo-400 text-white",
+  Show: "bg-purple text-white",
+  Teatro: "bg-red-2 text-white",
+  Gastronomia: "bg-orange-3 text-white",
+  Cultura: "bg-blue-4 text-white",
+  Infantil: "bg-green-5 text-white",
+  Esporte: "bg-yellow-3 text-white",
+  Educacional: "bg-brown-4 text-white",
+  Feira: "bg-green-2 text-white",
+  Festival: "bg-gray-5 text-white",
+  Religioso: "bg-blue-2 text-white",
 };
 
-const defaultColor = "bg-brown-light text-white";
+const defaultColor = "bg-brown-2 text-white";
 
 export function EventBadge({ category, variant = "default", className = "", }: EventBadgeProps) {
   const color = variant === "category" ? categoryColors[category] : defaultColor;

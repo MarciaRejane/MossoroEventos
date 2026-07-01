@@ -38,7 +38,7 @@ const activeIcon = L.icon({
 export function MapView({ events, selectedEvent }: MapViewProps) {
   const position: [number, number] = [-5.19, -37.34];
   return (
-    <MapContainer center={position} zoom={13} scrollWheelZoom={true} className='w-full h-[30rem] md:w-full md:h-[40rem] rounded-lg'>
+    <MapContainer center={position} zoom={13} scrollWheelZoom={true} className='w-[10rem] h-[20rem] md:w-[20rem] md:h-[15rem] rounded-lg'>
       <TileLayer
         attribution='&copy; OpenStreetMap'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

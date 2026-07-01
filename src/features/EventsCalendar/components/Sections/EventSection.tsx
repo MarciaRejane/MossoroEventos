@@ -7,7 +7,7 @@ import dynamic from "next/dynamic";
 import { EventDetails } from "../map/EventDetails";
 
 const MapView = dynamic(
-  () => import("@/src/features/Events/components/map/MapView").then((mod) => mod.MapView),
+  () => import("@/src/features/EventsCalendar/components/map/MapView").then((mod) => mod.MapView),
   { ssr: false }
 )
 
@@ -18,11 +18,11 @@ type EventItemProps = {
 export function EventSection({ events }: EventItemProps) {
   const { filteredEvents, category, setCategory, search, setSearch, selectedEvent, setSelectedEvent } = useEvents(events);
   return (
-    <section className="min-h-screen px-8 space-y-3 pb-8">
-      <div className="sticky bg-white top-29 left-0 z-50 p-8 shadow-md">
-        <SearchFilterContainer search={search} setSearch={setSearch} category={category} setCategory={setCategory} />
+    <section className="min-h-screen pb-8 px-4 lg:px-8">
+      <div className="sticky -mt-6 p-8 shadow-md rounded-xl bg-linear-to-r from-blue-6 to-purple-950 top-20 left-0 z-50">
+        <SearchFilterContainer search={search} setSearch={setSearch} category={category} setCategory={setCategory} events={events} />
       </div>
-      <div className="py-8 flex flex-col md:flex-row  gap-8 relative z-0">
+      <div className="relative z-0 flex gap-8">
         <EventList events={filteredEvents} onSelect={setSelectedEvent} />
         <MapView events={filteredEvents} selectedEvent={selectedEvent} />
       </div>
